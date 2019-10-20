@@ -7,3 +7,5 @@ Attribute:
  -h: Call of help.
  --clear: Delete only the file of infomation USB.
  #r00_Hx
+	New script for Astra Linux SE 1.4 - astra_usb_test.sh
+# 	It is not recommended to use
