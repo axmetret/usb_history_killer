@@ -9,7 +9,9 @@ PFILES='pathpiles1' # All path in log usb files
 #
 func_search () # Funcion output info log usb
 {
+echo "______SKAN:______" && dmesg | grep -i "usb"
 grep -ril 'usb' /var/log > $PFILES
+echo "Files skan:" && cat $PFILES
   while read FILE; do
     echo "$FILE" >> $STORY
     cat $FILE | grep -i 'usb' >> $STORY
