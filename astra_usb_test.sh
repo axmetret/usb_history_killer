@@ -29,7 +29,7 @@ func_delete () # Funcion delete logs USB
 done
 }
 func_only_clear () # Funcion deleting infomation a file
-(
+{
 echo 'Enter the file:' && read file;
 grep '' $file | sed '/usb/d' | sed '/USB/d' > data.backup;
 cp data.backup $file; rm data.backup
@@ -49,7 +49,7 @@ echo "|__________________________________________________"
 echo "|______________r00_Hx__version:0.20________________"
 }
 #
-while [ -n "$1"]
+while [ -n "$1" ]
 do
 case "$1" in 
 -p) func_search ;;
